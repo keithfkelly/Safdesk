@@ -1,0 +1,40 @@
+﻿@charset "UTF-8";
+/*
+ * (c) Zazar Ltd
+ *
+ */
+
+.rssFeed {
+	font-size: 12px;
+}
+.rssFeed a {
+	color: #008ab8;
+	text-decoration: none;
+}
+.rssFeed a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.rssHeader { font-size: 16px; padding: 6px; }
+
+.rssBody { border: 1px dotted #008ab8;max-height:150px; }
+.rssBody ul { list-style: none; }
+.rssBody ul, .rssRow, .rssRow h4, .rssRow p { 
+ padding:5px 10px; 
+ margin:0; 
+} 
+
+.rssRow { padding: 0px 0px 0px 9px; color:#666; }
+.rssRow h4 { font-size: 12px; margin-bottom:0; }
+
+/* rss date */
+.rssRow div {
+	font-size: 10px;
+	color: #008ab8;
+  padding: 0px 0px 0px 10px;
+}
+
+.odd {  }
+.even { }
+

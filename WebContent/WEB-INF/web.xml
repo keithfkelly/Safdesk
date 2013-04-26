@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <display-name>Safdesk</display-name>
+ <servlet>
+  <servlet-name>ticket</servlet-name>
+  <servlet-class>com.safdesk.controller.TicketController</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>renewal</servlet-name>
+  <servlet-class>com.safdesk.controller.RenewalController</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>catagory</servlet-name>
+  <servlet-class>com.safdesk.controller.CatagoryController</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>login</servlet-name>
+  <servlet-class>com.safdesk.servlet.DoLogin</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>dash</servlet-name>
+  <servlet-class>com.safdesk.servlet.doDash</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>client</servlet-name>
+  <servlet-class>com.safdesk.controller.ClientController</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>ticket</servlet-name>
+  <url-pattern>/ticket</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>renewal</servlet-name>
+  <url-pattern>/renewal</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>catagory</servlet-name>
+  <url-pattern>/catagory</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/doLogin</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>dash</servlet-name>
+  <url-pattern>/dashboard</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>client</servlet-name>
+  <url-pattern>/client</url-pattern>
+ </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>/home.jsp</welcome-file>
+ </welcome-file-list>
+</web-app>
